@@ -2,11 +2,12 @@
 <html lang="en">
 
 <head>
-    <title>Oculux | Contact List</title>
+    <title>Phemo | B&B Frontdesk PMS</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta name="description" content="Oculux Bootstrap 4x admin is super flexible, powerful, clean &amp; modern responsive admin dashboard with unlimited possibilities.">
+    <meta name="description" content="Phemo Bootstrap 4x admin is super flexible, powerful, clean &amp; modern responsive admin dashboard with unlimited possibilities.">
+    <meta name="keywords" content="admin template, Phemo admin template, dashboard template, flat admin template, responsive admin template, web app, Light Dark version">
     <meta name="author" content="GetBootstrap, design by: puffintheme.com">
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -15,9 +16,10 @@
     <link rel="stylesheet" href="../assets/vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../assets/vendor/animate-css/vivify.min.css">
 
+    <link rel="stylesheet" href="../assets/vendor/c3/c3.min.css" />
+    <link rel="stylesheet" href="../assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="assets/css/site.min.css">
-
 </head>
 
 <body class="theme-cyan font-montserrat">
@@ -32,98 +34,112 @@
             <div class="bar5"></div>
         </div>
     </div>
-    <!--
-    --Theme Setting --
-<div class="themesetting">
-    <a href="javascript:void(0);" class="theme_btn"><i class="icon-magic-wand"></i></a>
-    <div class="card theme_color">
-        <div class="header">
-            <h2>Theme Color</h2>
-        </div>
-        <ul class="choose-skin list-unstyled mb-0">
-            <li data-theme="green"><div class="green"></div></li>
-            <li data-theme="orange"><div class="orange"></div></li>
-            <li data-theme="blush"><div class="blush"></div></li>
-            <li data-theme="cyan" class="active"><div class="cyan"></div></li>
-            <li data-theme="indigo"><div class="indigo"></div></li>
-            <li data-theme="red"><div class="red"></div></li>
-        </ul>
-    </div>
-    <div class="card font_setting">
-        <div class="header">
-            <h2>Font Settings</h2>
-        </div>
-        <div>
-            <div class="fancy-radio mb-2">
-                <label><input name="font" value="font-krub" type="radio"><span><i></i>Krub Google font</span></label>
+
+    <!-- 
+        --Theme Setting 
+    <div class="themesetting">
+        <a href="javascript:void(0);" class="theme_btn"><i class="icon-magic-wand"></i></a>
+        <div class="card theme_color">
+            <div class="header">
+                <h2>Theme Color</h2>
             </div>
-            <div class="fancy-radio mb-2">
-                <label><input name="font" value="font-montserrat" type="radio" checked><span><i></i>Montserrat Google font</span></label>
+            <ul class="choose-skin list-unstyled mb-0">
+                <li data-theme="green">
+                    <div class="green"></div>
+                </li>
+                <li data-theme="orange">
+                    <div class="orange"></div>
+                </li>
+                <li data-theme="blush">
+                    <div class="blush"></div>
+                </li>
+                <li data-theme="cyan" class="active">
+                    <div class="cyan"></div>
+                </li>
+                <li data-theme="indigo">
+                    <div class="indigo"></div>
+                </li>
+                <li data-theme="red">
+                    <div class="red"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="card font_setting">
+            <div class="header">
+                <h2>Font Settings</h2>
             </div>
-            <div class="fancy-radio">
-                <label><input name="font" value="font-roboto" type="radio"><span><i></i>Robot Google font</span></label>
+            <div>
+                <div class="fancy-radio mb-2">
+                    <label><input name="font" value="font-krub" type="radio"><span><i></i>Krub Google font</span></label>
+                </div>
+                <div class="fancy-radio mb-2">
+                    <label><input name="font" value="font-montserrat" type="radio" checked><span><i></i>Montserrat Google font</span></label>
+                </div>
+                <div class="fancy-radio">
+                    <label><input name="font" value="font-roboto" type="radio"><span><i></i>Robot Google font</span></label>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="card setting_switch">
-        <div class="header">
-            <h2>Settings</h2>
-        </div>
-        <ul class="list-group">
-            <li class="list-group-item">
-                Light Version
-                <div class="float-right">
-                    <label class="switch">
+        <div class="card setting_switch">
+            <div class="header">
+                <h2>Settings</h2>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    Light Version
+                    <div class="float-right">
+                        <label class="switch">
                         <input type="checkbox" class="lv-btn">
                         <span class="slider round"></span>
                     </label>
-                </div>
-            </li>
-            <li class="list-group-item">
-                RTL Version
-                <div class="float-right">
-                    <label class="switch">
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    RTL Version
+                    <div class="float-right">
+                        <label class="switch">
                         <input type="checkbox" class="rtl-btn">
                         <span class="slider round"></span>
                     </label>
-                </div>
-            </li>
-            <li class="list-group-item">
-                Horizontal Henu
-                <div class="float-right">
-                    <label class="switch">
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    Horizontal Henu
+                    <div class="float-right">
+                        <label class="switch">
                         <input type="checkbox" class="hmenu-btn" >
                         <span class="slider round"></span>
                     </label>
-                </div>
-            </li>
-            <li class="list-group-item">
-                Mini Sidebar
-                <div class="float-right">
-                    <label class="switch">
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    Mini Sidebar
+                    <div class="float-right">
+                        <label class="switch">
                         <input type="checkbox" class="mini-sidebar-btn">
                         <span class="slider round"></span>
                     </label>
-                </div>
-            </li>
-        </ul>
-    </div>   
-    <div class="card">
-        <div class="form-group">
-            <label class="d-block">Traffic this Month <span class="float-right">77%</span></label>
-            <div class="progress progress-xxs">
-                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 77%;"></div>
-            </div>
+                    </div>
+                </li>
+            </ul>
         </div>
-        <div class="form-group">
-            <label class="d-block">Server Load <span class="float-right">50%</span></label>
-            <div class="progress progress-xxs">
-                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+        <div class="card">
+            <div class="form-group">
+                <label class="d-block">Traffic this Month <span class="float-right">77%</span></label>
+                <div class="progress progress-xxs">
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 77%;"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="d-block">Server Load <span class="float-right">50%</span></label>
+                <div class="progress progress-xxs">
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+                </div>
             </div>
         </div>
     </div>
-</div>
--->
+    -->
+
     <!-- Overlay For Sidebars -->
     <div class="overlay"></div>
 
@@ -134,7 +150,7 @@
 
                 <div class="navbar-left">
                     <div class="navbar-btn">
-                        <a href="index.html"><img src="../assets/images/icon.svg" alt="Oculux Logo" class="img-fluid logo"></a>
+                        <a href="index.html"><img src="../assets/images/icon.svg" alt="Phemo Logo" class="img-fluid logo"></a>
                         <button type="button" class="btn-toggle-offcanvas"><i class="lnr lnr-menu fa fa-bars"></i></button>
                     </div>
                     <ul class="nav navbar-nav">
@@ -271,7 +287,6 @@
             </div>
         </nav>
 
-
         <div class="search_div">
             <div class="card">
                 <div class="body">
@@ -407,105 +422,69 @@
                             <li><a href="page-timeline.html"><i class="icon-list"></i><span>Timeline</span></a></li>
                         </ul>
                     </div>
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="header">
-                                <h2>New Followers</h2>
-                                <ul class="header-dropdown dropdown">
-                                    <li><a href="javascript:void(0);" class="full-screen"><i class="icon-frame"></i></a></li>
-                                    <li class="dropdown">
-                                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="javascript:void(0);">Action</a></li>
-                                            <li><a href="javascript:void(0);">Another Action</a></li>
-                                            <li><a href="javascript:void(0);">Something else</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="table-responsive">
-                                <table class="table table-hover table-custom spacing5">
-                                    <tbody>
-                                        <tr>
-                                            <td class="w60">
-                                                <img src="../assets/images/xs/avatar1.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="w35 rounded" data-original-title="Avatar Name">
-                                            </td>
-                                            <td>
-                                                <a href="javascript:void(0);" title="">Jason Porter</a>
-                                                <p class="mb-0">+ 264-625-5858</p>
-                                            </td>
-                                            <td>
-                                                <span>jason-porter@example.com</span>
-                                            </td>
-                                            <td>
-                                                <span>123 6th St. Melbourne, FL 32904</span>
-                                            </td>
-                                            <td>
-                                                <button class="btn btn-primary btn-sm">Follow</button>
-                                                <button class="btn btn-success btn-sm">Message</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="w60">
-                                                <img src="../assets/images/xs/avatar6.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="w35 rounded" data-original-title="Avatar Name">
-                                            </td>
-                                            <td>
-                                                <a href="javascript:void(0);" title="">Sean Black</a>
-                                                <p class="mb-0">+ 264-625-7262</p>
-                                            </td>
-                                            <td>
-                                                <span>denise-Alvarado@example.com</span>
-                                            </td>
-                                            <td>
-                                                <span>514 S. Magnolia St. Orlando, FL 32806</span>
-                                            </td>
-                                            <td>
-                                                <button class="btn btn-primary btn-sm">Follow</button>
-                                                <button class="btn btn-success btn-sm">Message</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="w60">
-                                                <img src="../assets/images/xs/avatar7.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="w35 rounded" data-original-title="Avatar Name">
-                                            </td>
-                                            <td>
-                                                <a href="javascript:void(0);" title="">David Wallace</a>
-                                                <p class="mb-0">+ 264-625-9283</p>
-                                            </td>
-                                            <td>
-                                                <span>Carol-coke@example.com</span>
-                                            </td>
-                                            <td>
-                                                <span>44 Shirley Ave. West Chicago, IL 60185</span>
-                                            </td>
-                                            <td>
-                                                <button class="btn btn-primary btn-sm">Follow</button>
-                                                <button class="btn btn-success btn-sm">Message</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="w60">
-                                                <img src="../assets/images/xs/avatar8.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="w35 rounded" data-original-title="Avatar Name">
-                                            </td>
-                                            <td>
-                                                <a href="javascript:void(0);" title="">Theresa Wright</a>
-                                                <p class="mb-0">+ 264-625-2233</p>
-                                            </td>
-                                            <td>
-                                                <span>Michelle-Schultz@example.com</span>
-                                            </td>
-                                            <td>
-                                                <span>70 Bowman St. South Windsor, CT 06074</span>
-                                            </td>
-                                            <td>
-                                                <button class="btn btn-primary btn-sm">Follow</button>
-                                                <button class="btn btn-success btn-sm">Message</button>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="card w_card3">
+                            <div class="body">
+                                <div class="text-center"><i class="icon-picture text-info"></i>
+                                    <h4 class="m-t-25 mb-0">104 Picture</h4>
+                                    <p>Your gallery download complete</p>
+                                    <a href="javascript:void(0);" class="btn btn-info btn-round">Download now</a>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="card w_card3">
+                            <div class="body">
+                                <div class="text-center"><i class="icon-diamond text-success"></i>
+                                    <h4 class="m-t-25 mb-0">813 Point</h4>
+                                    <p>You are doing great job!</p>
+                                    <a href="javascript:void(0);" class="btn btn-success btn-round">Read now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="card w_card3">
+                            <div class="body">
+                                <div class="text-center"><i class="icon-social-twitter text-primary"></i>
+                                    <h4 class="m-t-25 mb-0">3,756</h4>
+                                    <p>New Followers on Twitter</p>
+                                    <a href="javascript:void(0);" class="btn btn-primary btn-round">Find more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                Anyone send me a message
+                                <div class="float-right">
+                                    <label class="switch">
+                                    <input type="checkbox" checked="">
+                                    <span class="slider round"></span>
+                                </label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                Anyone seeing my profile page
+                                <div class="float-right">
+                                    <label class="switch">
+                                    <input type="checkbox" checked="">
+                                    <span class="slider round"></span>
+                                </label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                Anyone posts a comment on my post
+                                <div class="float-right">
+                                    <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -737,7 +716,7 @@
 
         <div id="left-sidebar" class="sidebar">
             <div class="navbar-brand">
-                <a href="index.html"><img src="../assets/images/icon.svg" alt="Oculux Logo" class="img-fluid logo"><span>Oculux</span></a>
+                <a href="index.html"><img src="../assets/images/icon.svg" alt="Phemo Logo" class="img-fluid logo"><span>Phemo</span></a>
                 <button type="button" class="btn-toggle-offcanvas btn btn-sm float-right"><i class="lnr lnr-menu icon-close"></i></button>
             </div>
             <div class="sidebar-scroll">
@@ -749,7 +728,7 @@
                         <span>Welcome,</span>
                         <a href="javascript:void(0);" class="dropdown-toggle user-name" data-toggle="dropdown"><strong>Louis Pierce</strong></a>
                         <ul class="dropdown-menu dropdown-menu-right account vivify flipInY">
-                            <li><a href="page-profile.html"><i class="icon-user"></i>My Profile</a></li>
+                            <li><a href="page-profile.html"><i class="icon-user"></i>User Profile</a></li>
                             <li><a href="app-inbox.html"><i class="icon-envelope-open"></i>Messages</a></li>
                             <li><a href="javascript:void(0);"><i class="icon-settings"></i>Settings</a></li>
                             <li class="divider"></li>
@@ -760,31 +739,17 @@
                 <nav id="left-sidebar-nav" class="sidebar-nav">
                     <ul id="main-menu" class="metismenu">
                         <li class="header">Main</li>
-                        <li>
-                            <a href="#myPage" class="has-arrow"><i class="icon-home"></i><span>My Page</span></a>
+                        <li class="active">
+                            <a href="#myPage" class="has-arrow"><i class="icon-home"></i><span>Dashboard</span></a>
                             <ul>
-                                <li><a href="index.html">My Dashboard</a></li>
-                                <li><a href="index4.html">Web Analytics</a></li>
-                                <li><a href="index5.html">Event Monitoring</a></li>
-                                <li><a href="index6.html">Finance Performance</a></li>
-                                <li><a href="index7.html">Sales Monitoring</a></li>
-                                <li><a href="../hospital/index.html">Hospital Management</a></li>
-                                <li><a href="index9.html">Campaign Monitoring</a></li>
-                                <li><a href="index10.html">University Analytics</a></li>
-                                <li><a href="index11.html">eCommerce Analytics</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="index2.html"><i class="icon-speedometer"></i><span>Dashboard</span></a></li>
-                        <li><a href="index3.html"><i class="icon-diamond"></i><span>Crypto Coin</span></a></li>
-                        <li><a href="../hrms/index.html"><i class="icon-rocket"></i><span>HRMS System</span></a></li>
-                        <li><a href="../jobportal/index.html"><i class="icon-badge"></i><span>Job Portal</span></a></li>
-                        <li><a href="../landing/index.html"><i class="icon-cursor"></i><span>Landing Page</span></a></li>
-                        <li class="header">App</li>
-                        <li class="active open">
-                            <a href="#Contact" class="has-arrow"><i class="icon-book-open"></i><span>Contact</span></a>
-                            <ul>
-                                <li class="active"><a href="app-contact.html">List View</a></li>
-                                <li><a href="app-contact2.html">Grid View</a></li>
+                                <li class="active"><a href="index.html">Rooms</a></li>
+                                <li class="active"><a href="index4.html">Quotations</a></li>
+                                <li class="active"><a href="page-invoices.html">Invoices</a></li>
+                                <li class="active"><a href="index6.html">Guests</a></li>
+                                <li class="active"><a href="index7.html">Inventory</a></li>
+                                <li class="active"><a href="index11.html">Kitchen</a></li>
+                                <li class="active"><a href="index2.html">Bar</a></li>
+                                <li class="active"><a href="index10.html">Reports</a></li>
                             </ul>
                         </li>
                         <li><a href="app-inbox.html"><i class="icon-envelope"></i><span>Email</span></a></li>
@@ -906,201 +871,203 @@
                 <div class="block-header">
                     <div class="row clearfix">
                         <div class="col-md-6 col-sm-12">
-                            <h2>Contact List</h2>
+                            <h1>B&B Frontdesk PMS</h1>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="#">Oculux</a></li>
-                                    <li class="breadcrumb-item"><a href="#">App</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                                    <li class="breadcrumb-item"><a href="#">Phemo</a></li>
+                                    <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">B&B Frontdesk PMS</li>
                                 </ol>
                             </nav>
                         </div>
                         <div class="col-md-6 col-sm-12 text-right hidden-xs">
-                            <a href="javascript:void(0);" class="btn btn-sm btn-primary btn-round" title="">Add New</a>
+                            <a href="javascript:void(0);" class="btn btn-sm btn-primary" title="">Create Campaign</a>
+                            <a href="https://themeforest.net/item/Phemo-bootstrap-4x-admin-dashboard-clean-modern-ui-kit/23091507" class="btn btn-sm btn-success" title="Themeforest"><i class="icon-basket"></i> Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div class="card">
+                            <div class="body">
+                                <h6><i class="fa fa-hospital-o"></i> Total Rooms</h6>
+                                <div class="card-value text-danger float-left mr-3 pr-2 border-right">200</div>
+                                <div class="font-12">Delux Room <span class="float-right">55</span></div>
+                                <div class="font-12">General Rooms <span class="float-right">105</span></div>
+                                <div class="font-12">VIP Room <span class="float-right">40</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div class="card">
+                            <div class="body">
+                                <h6><i class="fa fa-users"></i> Total Guests</h6>
+                                <div class="card-value text-info float-left mr-3 pr-2 border-right">150</div>
+                                <div class="font-12">Bed Only <span class="float-right">35</span></div>
+                                <div class="font-12">Bed & Breakfast <span class="float-right">105</span></div>
+                                <div class="font-12">Bed, Breakfast & Dinner <span class="float-right">10</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div class="card">
+                            <div class="body">
+                                <h6><i class="fa fa-hospital-o"></i> Total Rooms</h6>
+                                <div class="card-value text-green float-left mr-3 pr-2 border-right">175</div>
+                                <div class="font-12">Delux Room <span class="float-right">55</span></div>
+                                <div class="font-12">General Rooms <span class="float-right">105</span></div>
+                                <div class="font-12">VIP Room <span class="float-right">40</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div class="card">
+                            <div class="body">
+                                <h6><i class="fa fa-hospital-o"></i> Total Rooms</h6>
+                                <div class="card-value text-orange float-left mr-3 pr-2 border-right">135</div>
+                                <div class="font-12">Delux Room <span class="float-right">55</span></div>
+                                <div class="font-12">General Rooms <span class="float-right">105</span></div>
+                                <div class="font-12">VIP Room <span class="float-right">40</span></div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row clearfix">
-                    <div class="col-lg-12">
-                        <div class="table-responsive">
-                            <table class="table table-hover table-custom spacing5">
-                                <tbody>
-                                    <tr>
-                                        <td class="w60">
-                                            <img src="../assets/images/xs/avatar1.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="w35 rounded" data-original-title="Avatar Name">
-                                        </td>
-                                        <td>
-                                            <a href="javascript:void(0);" title="">Jason Porter</a>
-                                            <p class="mb-0">+ 264-625-5858</p>
-                                        </td>
-                                        <td>
-                                            <span>jason-porter@example.com</span>
-                                        </td>
-                                        <td>
-                                            <span>123 6th St. Melbourne, FL 32904</span>
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-primary btn-sm">Follow</button>
-                                            <button class="btn btn-success btn-sm">Message</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w60">
-                                            <img src="../assets/images/xs/avatar6.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="w35 rounded" data-original-title="Avatar Name">
-                                        </td>
-                                        <td>
-                                            <a href="javascript:void(0);" title="">Sean Black</a>
-                                            <p class="mb-0">+ 264-625-7262</p>
-                                        </td>
-                                        <td>
-                                            <span>denise-Alvarado@example.com</span>
-                                        </td>
-                                        <td>
-                                            <span>514 S. Magnolia St. Orlando, FL 32806</span>
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-primary btn-sm">Follow</button>
-                                            <button class="btn btn-success btn-sm">Message</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w60">
-                                            <img src="../assets/images/xs/avatar7.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="w35 rounded" data-original-title="Avatar Name">
-                                        </td>
-                                        <td>
-                                            <a href="javascript:void(0);" title="">David Wallace</a>
-                                            <p class="mb-0">+ 264-625-9283</p>
-                                        </td>
-                                        <td>
-                                            <span>Carol-coke@example.com</span>
-                                        </td>
-                                        <td>
-                                            <span>44 Shirley Ave. West Chicago, IL 60185</span>
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-primary btn-sm">Follow</button>
-                                            <button class="btn btn-success btn-sm">Message</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w60">
-                                            <img src="../assets/images/xs/avatar8.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="w35 rounded" data-original-title="Avatar Name">
-                                        </td>
-                                        <td>
-                                            <a href="javascript:void(0);" title="">Theresa Wright</a>
-                                            <p class="mb-0">+ 264-625-2233</p>
-                                        </td>
-                                        <td>
-                                            <span>Michelle-Schultz@example.com</span>
-                                        </td>
-                                        <td>
-                                            <span>70 Bowman St. South Windsor, CT 06074</span>
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-primary btn-sm">Follow</button>
-                                            <button class="btn btn-success btn-sm">Message</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w60">
-                                            <img src="../assets/images/xs/avatar2.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="w35 rounded" data-original-title="Avatar Name">
-                                        </td>
-                                        <td>
-                                            <a href="javascript:void(0);" title="">Jason Porter</a>
-                                            <p class="mb-0">+ 264-625-5858</p>
-                                        </td>
-                                        <td>
-                                            <span>jason-porter@example.com</span>
-                                        </td>
-                                        <td>
-                                            <span>123 6th St. Melbourne, FL 32904</span>
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-primary btn-sm">Follow</button>
-                                            <button class="btn btn-success btn-sm">Message</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w60">
-                                            <div class="avtar-pic w35 bg-indigo"><span>DA</span></div>
-                                        </td>
-                                        <td>
-                                            <a href="javascript:void(0);" title="">Sean Black</a>
-                                            <p class="mb-0">+ 264-625-7262</p>
-                                        </td>
-                                        <td>
-                                            <span>denise-Alvarado@example.com</span>
-                                        </td>
-                                        <td>
-                                            <span>514 S. Magnolia St. Orlando, FL 32806</span>
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-primary btn-sm">Follow</button>
-                                            <button class="btn btn-success btn-sm">Message</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w60">
-                                            <img src="../assets/images/xs/avatar7.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="w35 rounded" data-original-title="Avatar Name">
-                                        </td>
-                                        <td>
-                                            <a href="javascript:void(0);" title="">David Wallace</a>
-                                            <p class="mb-0">+ 264-625-9283</p>
-                                        </td>
-                                        <td>
-                                            <span>Carol-coke@example.com</span>
-                                        </td>
-                                        <td>
-                                            <span>44 Shirley Ave. West Chicago, IL 60185</span>
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-primary btn-sm">Follow</button>
-                                            <button class="btn btn-success btn-sm">Message</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w60">
-                                            <div class="avtar-pic w35 bg-pink"><span>MS</span></div>
-                                        </td>
-                                        <td>
-                                            <a href="javascript:void(0);" title="">Theresa Wright</a>
-                                            <p class="mb-0">+ 264-625-2233</p>
-                                        </td>
-                                        <td>
-                                            <span>Michelle-Schultz@example.com</span>
-                                        </td>
-                                        <td>
-                                            <span>70 Bowman St. South Windsor, CT 06074</span>
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-primary btn-sm">Follow</button>
-                                            <button class="btn btn-success btn-sm">Message</button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                    <div class="col-lg-7 col-md-12 col-sm-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2>Checked-in-Guest</h3>
+                            </div>
+                            <div class="body">
+                                <div class="row clearfix">
+                                    <div class="col-lg-4 col-md-12">
+                                        <div class="input-group mb-3">
+                                            <input data-provide="datepicker" data-date-autoclose="true" placeholder="From Date" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-12">
+                                        <div class="input-group mb-3">
+                                            <input data-provide="datepicker" data-date-autoclose="true" placeholder="To Date" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-12">
+                                        <button class="btn btn-info btn-block" type="button">Search</button>
+                                    </div>
+                                </div>
+                                <div id="checked-in-guest" class="mt-4" style="height: 300px"></div>
+                            </div>
                         </div>
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination">
-                                <li class="page-item">
-                                    <a class="page-link" href="javascript:void(0);" aria-label="Previous">
-                                        <span aria-hidden="true">«</span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                </li>
-                                <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
-                                <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
-                                <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="javascript:void(0);" aria-label="Next">
-                                        <span aria-hidden="true">»</span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
+                    </div>
+                    <div class="col-lg-5 col-md-12 col-sm-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2>Checked-in-guest & Checked-out guest</h2>
+                            </div>
+                            <div class="body">
+                                <div id="chart-bar-rotated" style="height: 375px"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="row clearfix">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2>By Gender</h2>
+                            </div>
+                            <div class="body">
+                                <div class="d-flex bd-highlight mb-3 text-center">
+                                    <div class="flex-fill bd-highlight">
+                                        <label class="mb-0 text-muted">Male</label>
+                                        <h5>6,000</h5>
+                                    </div>
+                                    <div class="flex-fill bd-highlight">
+                                        <label class="mb-0 text-muted">Female</label>
+                                        <h5>4,000</h5>
+                                    </div>
+                                </div>
+                                <div id="chart-donut" style="height: 300px"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2>Guests by Stay</h2>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-custom2 table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="3">Division</th>
+                                            <th colspan="2">Activity</th>
+                                        </tr>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Male</th>
+                                            <th>Female</th>
+                                            <th>InGuest</th>
+                                            <th>OutGuest</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><span>Daily</span></td>
+                                            <td><span>25</span></td>
+                                            <td><span>11</span></td>
+                                            <td>2,025 <span class="text-green">8.5%</span></td>
+                                            <td>1,250 <span class="text-red">13.25%</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>Week</span></td>
+                                            <td><span>43</span></td>
+                                            <td><span>29</span></td>
+                                            <td>521 <span class="text-green">18.3%</span></td>
+                                            <td>842 <span class="text-red">23.4%</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>Month</span></td>
+                                            <td><span>89</span></td>
+                                            <td><span>56</span></td>
+                                            <td>2,028 <span class="text-red">19.7%</span></td>
+                                            <td>1,800 <span class="text-red">13.2%</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>Night</span></td>
+                                            <td><span>15</span></td>
+                                            <td><span>35</span></td>
+                                            <td>1,801 <span class="text-green">8.4%</span></td>
+                                            <td>1,251 <span class="text-red">10.9%</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>Day</span></td>
+                                            <td><span>61</span></td>
+                                            <td><span>21</span></td>
+                                            <td>2,714 <span class="text-green">8.7%</span></td>
+                                            <td>890 <span class="text-green">23.3%</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>Morning</span></td>
+                                            <td><span>85</span></td>
+                                            <td><span>23</span></td>
+                                            <td>1,205 <span class="text-green">8.5%</span></td>
+                                            <td>523 <span class="text-green">13.8%</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>Afternoon</span></td>
+                                            <td><span>38</span></td>
+                                            <td><span>18</span></td>
+                                            <td>3,890 <span class="text-green">8.9%</span></td>
+                                            <td>872 <span class="text-red">17.4%</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -1110,7 +1077,11 @@
     <script src="assets/bundles/libscripts.bundle.js"></script>
     <script src="assets/bundles/vendorscripts.bundle.js"></script>
 
+    <script src="assets/bundles/c3.bundle.js"></script>
+    <script src="../assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+
     <script src="assets/bundles/mainscripts.bundle.js"></script>
+    <script src="assets/js/index8.js"></script>
 </body>
 
 </html>

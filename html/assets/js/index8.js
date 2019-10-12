@@ -1,5 +1,5 @@
 $(function() {
-"use strict";
+    "use strict";
 
     // Date picker
     $('.inline-datepicker').datepicker({
@@ -7,7 +7,7 @@ $(function() {
     });
 
     c3.generate({
-        bindto: '#admitted-patient', // id of chart wrapper
+        bindto: '#checked-in-guest', // id of chart wrapper
         data: {
             columns: [
                 // each columns data
@@ -24,9 +24,9 @@ $(function() {
             },
             names: {
                 // name of each serie
-                'data1': 'Operation',
-                'data2': 'Surgery',
-                'data3': 'Treatment'
+                'data1': 'Bed Only',
+                'data2': 'Bed & Breakfast',
+                'data3': 'Bed, Breakfast & Dinner'
             }
         },
         axis: {
@@ -60,8 +60,8 @@ $(function() {
             },
             names: {
                 // name of each serie
-                'data1': 'Discharged',
-                'data2': 'Readmitted'
+                'data1': 'Checked In',
+                'data2': 'Checked Out'
             }
         },
         axis: {
@@ -103,8 +103,7 @@ $(function() {
                 'data2': 'Female'
             }
         },
-        axis: {
-        },
+        axis: {},
         legend: {
             show: true, //hide legend
         },
