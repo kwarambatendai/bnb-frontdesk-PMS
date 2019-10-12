@@ -2,12 +2,11 @@
 <html lang="en">
 
 <head>
-    <title>Phemo | B&B Frontdesk PMS</title>
+    <title>Phemo | Invoices</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta name="description" content="Phemo Bootstrap 4x admin is super flexible, powerful, clean &amp; modern responsive admin dashboard with unlimited possibilities.">
-    <meta name="keywords" content="admin template, Phemo admin template, dashboard template, flat admin template, responsive admin template, web app, Light Dark version">
     <meta name="author" content="GetBootstrap, design by: puffintheme.com">
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -16,10 +15,10 @@
     <link rel="stylesheet" href="../assets/vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../assets/vendor/animate-css/vivify.min.css">
 
-    <link rel="stylesheet" href="../assets/vendor/c3/c3.min.css" />
-    <link rel="stylesheet" href="../assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
+    <link rel="stylesheet" href="../assets/vendor/jquery-datatable/dataTables.bootstrap4.min.css">
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="assets/css/site.min.css">
+
 </head>
 
 <body class="theme-cyan font-montserrat">
@@ -147,20 +146,21 @@
                                 </li>
                             </ul>
                         </li>
+                </div>
 
-                        <div class="navbar-right">
-                            <div id="navbar-menu">
-                                <ul class="nav navbar-nav">
-                                    <li><a href="javascript:void(0);" class="search_toggle icon-menu" title="Search Result"><i class="icon-magnifier"></i></a></li>
-                                    <li><a href="javascript:void(0);" class="right_toggle icon-menu" title="Right Menu"><i class="icon-bubbles"></i><span class="notification-dot bg-pink">2</span></a></li>
-                                    <li><a href="page-login.html" class="icon-menu"><i class="icon-power"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
+                <div class="navbar-right">
+                    <div id="navbar-menu">
+                        <ul class="nav navbar-nav">
+                            <li><a href="javascript:void(0);" class="search_toggle icon-menu" title="Search Result"><i class="icon-magnifier"></i></a></li>
+                            <li><a href="javascript:void(0);" class="right_toggle icon-menu" title="Right Menu"><i class="icon-bubbles"></i><span class="notification-dot bg-pink">2</span></a></li>
+                            <li><a href="page-login.html" class="icon-menu"><i class="icon-power"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="progress-container">
-                    <div class="progress-bar" id="myBar"></div>
-                </div>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>
         </nav>
 
         <div class="search_div">
@@ -298,69 +298,72 @@
                             <li><a href="page-timeline.html"><i class="icon-list"></i><span>Timeline</span></a></li>
                         </ul>
                     </div>
-                    <div class="col-md-4 col-sm-12">
-                        <div class="card w_card3">
-                            <div class="body">
-                                <div class="text-center"><i class="icon-picture text-info"></i>
-                                    <h4 class="m-t-25 mb-0">104 Picture</h4>
-                                    <p>Your gallery download complete</p>
-                                    <a href="javascript:void(0);" class="btn btn-info btn-round">Download now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12">
-                        <div class="card w_card3">
-                            <div class="body">
-                                <div class="text-center"><i class="icon-diamond text-success"></i>
-                                    <h4 class="m-t-25 mb-0">813 Point</h4>
-                                    <p>You are doing great job!</p>
-                                    <a href="javascript:void(0);" class="btn btn-success btn-round">Read now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12">
-                        <div class="card w_card3">
-                            <div class="body">
-                                <div class="text-center"><i class="icon-social-twitter text-primary"></i>
-                                    <h4 class="m-t-25 mb-0">3,756</h4>
-                                    <p>New Followers on Twitter</p>
-                                    <a href="javascript:void(0);" class="btn btn-primary btn-round">Find more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                </div>
+                <div class="row clearfix">
                     <div class="col-12">
-                        <ul class="list-group">
-                            <li class="list-group-item">
-                                Anyone send me a message
-                                <div class="float-right">
-                                    <label class="switch">
-                                    <input type="checkbox" checked="">
-                                    <span class="slider round"></span>
-                                </label>
+                        <div class="card">
+                            <div class="header">
+                                <h2>FAQs</h2>
+                                <ul class="header-dropdown dropdown">
+                                    <li><a href="javascript:void(0);" class="full-screen"><i class="icon-frame"></i></a></li>
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="javascript:void(0);">Action</a></li>
+                                            <li><a href="javascript:void(0);">Another Action</a></li>
+                                            <li><a href="javascript:void(0);">Something else</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="accordion" id="accordion-faqs">
+                                <div>
+                                    <div class="card-header" id="headingOne">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne-faqs" aria-expanded="true" aria-controls="collapseOne">
+                                            Q: How to use SCSS variables to build custom color <span class="float-right badge  badge-primary">23</span>
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseOne-faqs" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion-faqs">
+                                        <div class="body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                            on it squid single-origin coffee nulla assumenda shoreditch et.
+                                        </div>
+                                    </div>
                                 </div>
-                            </li>
-                            <li class="list-group-item">
-                                Anyone seeing my profile page
-                                <div class="float-right">
-                                    <label class="switch">
-                                    <input type="checkbox" checked="">
-                                    <span class="slider round"></span>
-                                </label>
+                                <div>
+                                    <div class="card-header" id="headingTwo">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo-faqs" aria-expanded="false" aria-controls="collapseTwo">
+                                            Q: Four questions to ask about your DevOps strategy <span class="float-right badge  badge-success">8</span>
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseTwo-faqs" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-faqs">
+                                        <div class="body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                            you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
                                 </div>
-                            </li>
-                            <li class="list-group-item">
-                                Anyone posts a comment on my post
-                                <div class="float-right">
-                                    <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="slider round"></span>
-                                </label>
+                                <div>
+                                    <div class="card-header" id="headingThree">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree-faqs" aria-expanded="false" aria-controls="collapseThree">
+                                        Q: A comparison of microservices and functional programming concepts <span class="float-right badge  badge-danger">13</span>
+                                        </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseThree-faqs" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-faqs">
+                                        <div class="body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                                            ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
                                 </div>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -604,7 +607,7 @@
                         <span>Welcome,</span>
                         <a href="javascript:void(0);" class="dropdown-toggle user-name" data-toggle="dropdown"><strong>Louis Pierce</strong></a>
                         <ul class="dropdown-menu dropdown-menu-right account vivify flipInY">
-                            <li><a href="page-profile.html"><i class="icon-user"></i>User Profile</a></li>
+                            <li><a href="page-profile.html"><i class="icon-user"></i>My Profile</a></li>
                             <li><a href="app-inbox.html"><i class="icon-envelope-open"></i>Messages</a></li>
                             <li><a href="javascript:void(0);"><i class="icon-settings"></i>Settings</a></li>
                             <li class="divider"></li>
@@ -632,218 +635,16 @@
             </div>
         </div>
 
-        <div id="main-content">
-            <div class="container-fluid">
-                <div class="block-header">
-                    <div class="row clearfix">
-                        <div class="col-md-6 col-sm-12">
-                            <h1>B&B Frontdesk PMS</h1>
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="#">Phemo</a></li>
-                                    <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">B&B Frontdesk PMS</li>
-                                </ol>
-                            </nav>
-                        </div>
 
-                    </div>
-                </div>
-                <div class="row clearfix">
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                        <div class="card">
-                            <div class="body">
-                                <h6><i class="fa fa-hospital-o"></i> Total Rooms</h6>
-                                <div class="card-value text-danger float-left mr-3 pr-2 border-right">200</div>
-                                <div class="font-12">Delux Room <span class="float-right">55</span></div>
-                                <div class="font-12">General Rooms <span class="float-right">105</span></div>
-                                <div class="font-12">VIP Room <span class="float-right">40</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                        <div class="card">
-                            <div class="body">
-                                <h6><i class="fa fa-users"></i> Total Guests</h6>
-                                <div class="card-value text-info float-left mr-3 pr-2 border-right">150</div>
-                                <div class="font-12">Bed Only <span class="float-right">35</span></div>
-                                <div class="font-12">Bed & Breakfast <span class="float-right">105</span></div>
-                                <div class="font-12">Bed, Breakfast & Dinner <span class="float-right">10</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                        <div class="card">
-                            <div class="body">
-                                <h6><i class="fa fa-hospital-o"></i> Total Rooms</h6>
-                                <div class="card-value text-green float-left mr-3 pr-2 border-right">175</div>
-                                <div class="font-12">Delux Room <span class="float-right">55</span></div>
-                                <div class="font-12">General Rooms <span class="float-right">105</span></div>
-                                <div class="font-12">VIP Room <span class="float-right">40</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                        <div class="card">
-                            <div class="body">
-                                <h6><i class="fa fa-hospital-o"></i> Total Rooms</h6>
-                                <div class="card-value text-orange float-left mr-3 pr-2 border-right">135</div>
-                                <div class="font-12">Delux Room <span class="float-right">55</span></div>
-                                <div class="font-12">General Rooms <span class="float-right">105</span></div>
-                                <div class="font-12">VIP Room <span class="float-right">40</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row clearfix">
-                    <div class="col-lg-7 col-md-12 col-sm-12">
-                        <div class="card">
-                            <div class="header">
-                                <h2>Checked-in-Guest</h3>
-                            </div>
-                            <div class="body">
-                                <div class="row clearfix">
-                                    <div class="col-lg-4 col-md-12">
-                                        <div class="input-group mb-3">
-                                            <input data-provide="datepicker" data-date-autoclose="true" placeholder="From Date" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-12">
-                                        <div class="input-group mb-3">
-                                            <input data-provide="datepicker" data-date-autoclose="true" placeholder="To Date" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-12">
-                                        <button class="btn btn-info btn-block" type="button">Search</button>
-                                    </div>
-                                </div>
-                                <div id="checked-in-guest" class="mt-4" style="height: 300px"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-md-12 col-sm-12">
-                        <div class="card">
-                            <div class="header">
-                                <h2>Checked-in-guest & Checked-out guest</h2>
-                            </div>
-                            <div class="body">
-                                <div id="chart-bar-rotated" style="height: 375px"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row clearfix">
-                    <div class="col-lg-4 col-md-12">
-                        <div class="card">
-                            <div class="header">
-                                <h2>By Gender</h2>
-                            </div>
-                            <div class="body">
-                                <div class="d-flex bd-highlight mb-3 text-center">
-                                    <div class="flex-fill bd-highlight">
-                                        <label class="mb-0 text-muted">Male</label>
-                                        <h5>6,000</h5>
-                                    </div>
-                                    <div class="flex-fill bd-highlight">
-                                        <label class="mb-0 text-muted">Female</label>
-                                        <h5>4,000</h5>
-                                    </div>
-                                </div>
-                                <div id="chart-donut" style="height: 300px"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-8 col-md-12">
-                        <div class="card">
-                            <div class="header">
-                                <h2>Guests by Stay</h2>
-                            </div>
-                            <div class="table-responsive">
-                                <table class="table table-custom2 table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th colspan="3">Division</th>
-                                            <th colspan="2">Activity</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>Male</th>
-                                            <th>Female</th>
-                                            <th>InGuest</th>
-                                            <th>OutGuest</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><span>Daily</span></td>
-                                            <td><span>25</span></td>
-                                            <td><span>11</span></td>
-                                            <td>2,025 <span class="text-green">8.5%</span></td>
-                                            <td>1,250 <span class="text-red">13.25%</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td><span>Week</span></td>
-                                            <td><span>43</span></td>
-                                            <td><span>29</span></td>
-                                            <td>521 <span class="text-green">18.3%</span></td>
-                                            <td>842 <span class="text-red">23.4%</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td><span>Month</span></td>
-                                            <td><span>89</span></td>
-                                            <td><span>56</span></td>
-                                            <td>2,028 <span class="text-red">19.7%</span></td>
-                                            <td>1,800 <span class="text-red">13.2%</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td><span>Night</span></td>
-                                            <td><span>15</span></td>
-                                            <td><span>35</span></td>
-                                            <td>1,801 <span class="text-green">8.4%</span></td>
-                                            <td>1,251 <span class="text-red">10.9%</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td><span>Day</span></td>
-                                            <td><span>61</span></td>
-                                            <td><span>21</span></td>
-                                            <td>2,714 <span class="text-green">8.7%</span></td>
-                                            <td>890 <span class="text-green">23.3%</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td><span>Morning</span></td>
-                                            <td><span>85</span></td>
-                                            <td><span>23</span></td>
-                                            <td>1,205 <span class="text-green">8.5%</span></td>
-                                            <td>523 <span class="text-green">13.8%</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td><span>Afternoon</span></td>
-                                            <td><span>38</span></td>
-                                            <td><span>18</span></td>
-                                            <td>3,890 <span class="text-green">8.9%</span></td>
-                                            <td>872 <span class="text-red">17.4%</span></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    </div>
 
-            </div>
-        </div>
+    </div>
 
-        </div>
+    <!-- Javascript -->
+    <script src="assets/bundles/libscripts.bundle.js"></script>
+    <script src="assets/bundles/vendorscripts.bundle.js"></script>
 
-        <!-- Javascript -->
-        <script src="assets/bundles/libscripts.bundle.js"></script>
-        <script src="assets/bundles/vendorscripts.bundle.js"></script>
-
-        <script src="assets/bundles/c3.bundle.js"></script>
-        <script src="../assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
-
-        <script src="assets/bundles/mainscripts.bundle.js"></script>
-        <script src="assets/js/index8.js"></script>
+    <script src="assets/bundles/mainscripts.bundle.js"></script>
 </body>
 
 </html>
