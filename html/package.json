@@ -1,7 +1,7 @@
 {
     "name": Phemo,
     "version": "1.0.0",
-    "description": "Oculux Bootstrap 4.1.1 Admin Dashboard",
+    "description": "Phemo Bootstrap 4.1.1 Admin Dashboard",
     "main": "Gruntfile.js",
     "directories": {
         "doc": "doc"
