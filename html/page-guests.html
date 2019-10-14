@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Phemo | Invoices</title>
+    <title>Phemo | Guests</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -189,7 +189,7 @@
                                 <div class="d-flex align-items-center">
                                     <div class="avtar-pic w35 bg-red" data-toggle="tooltip" data-placement="top" title="" data-original-title="Avatar Name"><span>SS</span></div>
                                     <div class="ml-3">
-                                        <a href="page-invoices-detail.html" title="">South Shyanne</a>
+                                        <a href="page-Guests-detail.html" title="">South Shyanne</a>
                                         <p class="mb-0">south.shyanne@example.com</p>
                                     </div>
                                 </div>
@@ -294,7 +294,7 @@
                             <li><a href="app-chat.html"><i class="icon-bubbles"></i><span>Messenger</span></a></li>
                             <li><a href="app-calendar.html"><i class="icon-calendar"></i><span>Event</span></a></li>
                             <li><a href="page-profile.html"><i class="icon-user"></i><span>Profile</span></a></li>
-                            <li><a href="page-invoices.html"><i class="icon-printer"></i><span>Invoice</span></a></li>
+                            <li><a href="page-Guests.html"><i class="icon-printer"></i><span>Invoice</span></a></li>
                             <li><a href="page-timeline.html"><i class="icon-list"></i><span>Timeline</span></a></li>
                         </ul>
                     </div>
@@ -604,8 +604,8 @@
                         <img src="../assets/images/user.png" class="user-photo" alt="User Profile Picture">
                     </div>
                     <div class="dropdown">
-                        <span>Welcome,</span>
-                        <a href="javascript:void(0);" class="dropdown-toggle user-name" data-toggle="dropdown"><strong>Louis Pierce</strong></a>
+                        <span>Hello,</span>
+                        <a href="javascript:void(0);" class="dropdown-toggle user-name" data-toggle="dropdown"><strong>Tendai Kwaramba</strong></a>
                         <ul class="dropdown-menu dropdown-menu-right account vivify flipInY">
                             <li><a href="page-profile.html"><i class="icon-user"></i>My Profile</a></li>
                             <li><a href="app-inbox.html"><i class="icon-envelope-open"></i>Messages</a></li>
@@ -621,7 +621,7 @@
                         <li class="active open"></li>
                         <li><a href="page-rooms.html"><i class="icon-power"></i><span>Rooms</span></a></li>
                         <li><a href="page-quotations.html"><i class="icon-list"></i><span>Quotations</span></a></li>
-                        <li><a href="page-invoices.html"><i class="icon-envelope"></i><span>Invoices</span></a></li>
+                        <li><a href="page-Guests.html"><i class="icon-envelope"></i><span>Guests</span></a></li>
                         <li><a href="page-guests.html"><i class="icon-picture"></i><span>Guests</span></a></li>
                         <li><a href="page-inventory.html"><i class="icon-envelope-open"></i><span>Inventory</span></a></li>
                         <li><a href="page-kitchen.html"><i class="icon-bell"></i><span>Kitchen</span></a></li>
@@ -635,16 +635,244 @@
             </div>
         </div>
 
+        <!--Guest list goes here-->
+        <div id="main-content">
+            <div class="container-fluid">
+                <div class="block-header">
+                    <div class="row clearfix">
+                        <div class="col-md-6 col-sm-12">
+                            <h2>Guest List</h2>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">Phemo</a></li>
+                                    <!--<li class="breadcrumb-item"><a href="#">Pages</a></li>-->
+                                    <li class="breadcrumb-item active" aria-current="page">Guests</li>
+                                </ol>
+                            </nav>
+                        </div>
+                        <div class="col-md-6 col-sm-12 text-right hidden-xs">
+                            <a href="javascript:void(0);" class="btn btn-sm btn-primary btn-round" title="">Add New</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-12">
+                        <div class="table-responsive invoice_list mb-4">
+                            <table class="table table-hover table-custom spacing8">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 20px;">#</th>
+                                        <th>Client</th>
+                                        <th style="width: 50px;">Amount</th>
+                                        <th style="width: 50px;">Status</th>
+                                        <th style="width: 110px;">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span>01</span>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="avtar-pic w35 bg-red" data-toggle="tooltip" data-placement="top" title="Avatar Name"><span>SS</span></div>
+                                                <div class="ml-3">
+                                                    <a href="page-invoices-detail.html" title="">Maje Maje</a>
+                                                    <p class="mb-0">maje@majemaje.com</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>$1200</td>
+                                        <td><span class="badge badge-success ml-0 mr-0">Done</span></td>
+                                        <td>
+                                            <button type="button" class="btn btn-sm btn-default" title="Send Invoice" data-toggle="tooltip" data-placement="top"><i
+                                                    class="icon-envelope"></i></button>
+                                            <button type="button" class="btn btn-sm btn-default " title="Print" data-toggle="tooltip" data-placement="top"><i
+                                                    class="icon-printer"></i></button>
+                                            <button type="button" class="btn btn-sm btn-default" title="Delete" data-toggle="tooltip" data-placement="top"><i
+                                                    class="icon-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span>02</span>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="../assets/images/xs/avatar2.jpg" data-toggle="tooltip" data-placement="top" title="Avatar Name" alt="Avatar" class="w35 h35 rounded">
+                                                <div class="ml-3">
+                                                    <a href="javascript:void(0);" title="">Zoe Baker</a>
+                                                    <p class="mb-0">zoe.baker@example.com</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>$378</td>
+                                        <td><span class="badge badge-success ml-0 mr-0">Done</span></td>
+                                        <td>
+                                            <button type="button" class="btn btn-sm btn-default" title="Send Invoice" data-toggle="tooltip" data-placement="top"><i
+                                                    class="icon-envelope"></i></button>
+                                            <button type="button" class="btn btn-sm btn-default " title="Print" data-toggle="tooltip" data-placement="top"><i
+                                                    class="icon-printer"></i></button>
+                                            <button type="button" class="btn btn-sm btn-default" title="Delete" data-toggle="tooltip" data-placement="top"><i
+                                                    class="icon-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span>03</span>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="avtar-pic w35 bg-indigo" data-toggle="tooltip" data-placement="top" title="Avatar Name"><span>CB</span></div>
+                                                <div class="ml-3">
+                                                    <a href="javascript:void(0);" title="">Colin Brown</a>
+                                                    <p class="mb-0">colinbrown@example.com</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>$653</td>
+                                        <td><span class="badge badge-success ml-0 mr-0">Done</span></td>
+                                        <td>
+                                            <button type="button" class="btn btn-sm btn-default" title="Send Invoice" data-toggle="tooltip" data-placement="top"><i
+                                                    class="icon-envelope"></i></button>
+                                            <button type="button" class="btn btn-sm btn-default " title="Print" data-toggle="tooltip" data-placement="top"><i
+                                                    class="icon-printer"></i></button>
+                                            <button type="button" class="btn btn-sm btn-default" title="Delete" data-toggle="tooltip" data-placement="top"><i
+                                                    class="icon-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span>04</span>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="avtar-pic w35 bg-green" data-toggle="tooltip" data-placement="top" title="Avatar Name"><span>KG</span></div>
+                                                <div class="ml-3">
+                                                    <a href="javascript:void(0);" title="">Kevin Gill</a>
+                                                    <p class="mb-0">kevin.gill@example.com</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>$451</td>
+                                        <td><span class="badge badge-warning  ml-0 mr-0">Panding</span></td>
+                                        <td>
+                                            <button type="button" class="btn btn-sm btn-default" title="Send Invoice" data-toggle="tooltip" data-placement="top"><i
+                                                    class="icon-envelope"></i></button>
+                                            <button type="button" class="btn btn-sm btn-default " title="Print" data-toggle="tooltip" data-placement="top"><i
+                                                    class="icon-printer"></i></button>
+                                            <button type="button" class="btn btn-sm btn-default" title="Delete" data-toggle="tooltip" data-placement="top"><i
+                                                    class="icon-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span>05</span>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="../assets/images/xs/avatar5.jpg" data-toggle="tooltip" data-placement="top" title="Avatar Name" alt="Avatar" class="w35 h35 rounded">
+                                                <div class="ml-3">
+                                                    <a href="javascript:void(0);" title="">Brandon Smith</a>
+                                                    <p class="mb-0">Maria.gill@example.com</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>$1,989</td>
+                                        <td><span class="badge badge-success  ml-0 mr-0">Done</span></td>
+                                        <td>
+                                            <button type="button" class="btn btn-sm btn-default" title="Send Invoice" data-toggle="tooltip" data-placement="top"><i
+                                                    class="icon-envelope"></i></button>
+                                            <button type="button" class="btn btn-sm btn-default " title="Print" data-toggle="tooltip" data-placement="top"><i
+                                                    class="icon-printer"></i></button>
+                                            <button type="button" class="btn btn-sm btn-default" title="Delete" data-toggle="tooltip" data-placement="top"><i
+                                                    class="icon-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span>06</span>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="../assets/images/xs/avatar6.jpg" data-toggle="tooltip" data-placement="top" title="Avatar Name" alt="Avatar" class="w35 h35 rounded">
+                                                <div class="ml-3">
+                                                    <a href="javascript:void(0);" title="">Kevin Baker</a>
+                                                    <p class="mb-0">kevin.baker@example.com</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>$343</td>
+                                        <td><span class="badge badge-warning  ml-0 mr-0">Panding</span></td>
+                                        <td>
+                                            <button type="button" class="btn btn-sm btn-default" title="Send Invoice" data-toggle="tooltip" data-placement="top"><i
+                                                    class="icon-envelope"></i></button>
+                                            <button type="button" class="btn btn-sm btn-default " title="Print" data-toggle="tooltip" data-placement="top"><i
+                                                    class="icon-printer"></i></button>
+                                            <button type="button" class="btn btn-sm btn-default" title="Delete" data-toggle="tooltip" data-placement="top"><i
+                                                    class="icon-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span>13</span>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="../assets/images/xs/avatar3.jpg" data-toggle="tooltip" data-placement="top" title="Avatar Name" alt="Avatar" class="w35 h35 rounded">
+                                                <div class="ml-3">
+                                                    <a href="javascript:void(0);" title="">Colin Brown</a>
+                                                    <p class="mb-0">colin-brown@example.com</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>$653</td>
+                                        <td><span class="badge badge-success ml-0 mr-0">Done</span></td>
+                                        <td>
+                                            <button type="button" class="btn btn-sm btn-default" title="Send Invoice" data-toggle="tooltip" data-placement="top"><i
+                                                    class="icon-envelope"></i></button>
+                                            <button type="button" class="btn btn-sm btn-default " title="Print" data-toggle="tooltip" data-placement="top"><i
+                                                    class="icon-printer"></i></button>
+                                            <button type="button" class="btn btn-sm btn-default" title="Delete" data-toggle="tooltip" data-placement="top"><i
+                                                    class="icon-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span>14</span>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="../assets/images/xs/avatar4.jpg" data-toggle="tooltip" data-placement="top" title="Avatar Name" alt="Avatar" class="w35 h35 rounded">
+                                                <div class="ml-3">
+                                                    <a href="javascript:void(0);" title="">Kevin Gill</a>
+                                                    <p class="mb-0">kevin-gill@example.com</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>$451</td>
+                                        <td><span class="badge badge-warning  ml-0 mr-0">Panding</span></td>
+                                        <td>
+                                            <button type="button" class="btn btn-sm btn-default" title="Send Invoice" data-toggle="tooltip" data-placement="top"><i
+                                                    class="icon-envelope"></i></button>
+                                            <button type="button" class="btn btn-sm btn-default " title="Print" data-toggle="tooltip" data-placement="top"><i
+                                                    class="icon-printer"></i></button>
+                                            <button type="button" class="btn btn-sm btn-default" title="Delete" data-toggle="tooltip" data-placement="top"><i
+                                                    class="icon-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
 
-    </div>
 
-    </div>
+                <!-- Javascript -->
+                <script src="assets/bundles/libscripts.bundle.js"></script>
+                <script src="assets/bundles/vendorscripts.bundle.js"></script>
 
-    <!-- Javascript -->
-    <script src="assets/bundles/libscripts.bundle.js"></script>
-    <script src="assets/bundles/vendorscripts.bundle.js"></script>
-
-    <script src="assets/bundles/mainscripts.bundle.js"></script>
+                <script src="assets/bundles/mainscripts.bundle.js"></script>
 </body>
 
 </html>
