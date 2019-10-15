@@ -45,7 +45,7 @@
 
                 <div class="navbar-left">
                     <div class="navbar-btn">
-                        <a href="index.html"><img src="../assets/images/icon.svg" alt="Phemo Logo" class="img-fluid logo"></a>
+                        <a href="page-home.html"><img src="../assets/images/icon.svg" alt="Phemo Logo" class="img-fluid logo"></a>
                         <button type="button" class="btn-toggle-offcanvas"><i
                                 class="lnr lnr-menu fa fa-bars"></i></button>
                     </div>
@@ -599,7 +599,7 @@
 
         <div id="left-sidebar" class="sidebar">
             <div class="navbar-brand">
-                <a href="index.html"><img src="../assets/images/icon.svg" alt="Phemo Logo" class="img-fluid logo"><span>Phemo</span></a>
+                <a href="page-home.html"><img src="../assets/images/icon.svg" alt="Phemo Logo" class="img-fluid logo"><span>Phemo</span></a>
                 <button type="button" class="btn-toggle-offcanvas btn btn-sm float-right"><i
                         class="lnr lnr-menu icon-close"></i></button>
             </div>
@@ -622,213 +622,247 @@
                 </div>
                 <nav id="left-sidebar-nav" class="sidebar-nav">
                     <ul id="main-menu" class="metismenu">
-                        <li class="header">Main</li>
+                        <li class="header">Menu</li>
                         <li class="active open"></li>
-                        <li><a href="page-bookings.html"><i class="icon-power"></i><span>Bookings</span></a></li>
-                        <li><a href="page-quotations.html"><i class="icon-list"></i><span>Quotations</span></a></li>
-                        <li><a href="page-invoices.html"><i class="icon-envelope"></i><span>Invoices</span></a></li>
-                        <li><a href="page-guests.html"><i class="icon-picture"></i><span>Guests</span></a></li>
-                        <li><a href="page-inventory.html"><i class="icon-envelope-open"></i><span>Inventory</span></a></li>
-                        <li><a href="page-kitchen.html"><i class="icon-bell"></i><span>Kitchen</span></a></li>
-                        <li><a href="page-bar.html"><i class="icon-settings"></i><span>Bar</span></a></li>
-                        <li><a href="page-reports.html"><i class="icon-printer"></i><span>Reports</span></a></li>
+                        <li><a href="page-bookings.html"><i class="fa fa-building-o"></i><span>Bookings</span></a></li>
+                        <li><a href="page-billing.html"><i class="icon-envelope"></i><span>Billing</span></a></li>
+                        <li><a href="app-calendar.html"><i class="icon-calendar"></i><span>Calendar</span></a></li>
+                        <li><a href="page-guests.html"><i class="icon-users"></i><span>Guests</span></a></li>
+                        <li><a href="page-Catering.html"><i class="fa fa-coffee"></i><span>Catering</span></a></li>
+                        <li><a href="page-housekeeping.html"><i class="icon-envelope-open"></i><span>House Keeping</span></a></li>
                         <li><a href="app-inbox.html"><i class="icon-envelope-open"></i><span>Email</span></a></li>
                         <li><a href="app-chat.html"><i class="icon-bubbles"></i><span>Messenger</span></a></li>
-                        <li><a href="app-calendar.html"><i class="icon-calendar"></i><span>Calendar</span></a></li>
+                        <li><a href="room-add.html"><i class="icon-users"></i><span>Add Room</span></a></li>
+                        <li><a href="page-reports.html"><i class="fa fa-bar-chart-o"></i><span>Reports</span></a></li>
                     </ul>
                 </nav>
             </div>
         </div>
 
+        <!--The graphs start here-->
         <div id="main-content">
             <div class="container-fluid">
                 <div class="block-header">
                     <div class="row clearfix">
                         <div class="col-md-6 col-sm-12">
-                            <h1>B&B Frontdesk PMS</h1>
+                            <h1>Dashboard</h1>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="#">Phemo</a></li>
-                                    <li class="breadcrumb-item"><a href="#">Booking</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Booking</li>
+                                    <!--<li class="breadcrumb-item"><a href="#">Phemo</a></li>
+                                    <li class="breadcrumb-item"><a href="#">Dashboard</a></li>-->
+                                    <li class="breadcrumb-item active" aria-current="page">Phemo B&B Frontdesk PMS</li>
                                 </ol>
                             </nav>
                         </div>
+
                     </div>
-                    <div class="row clearfix ">
-                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 ">
-                            <div class="card ">
-                                <div class="body ">
-                                    <h6><i class="fa fa-building-o "></i> Total Rooms</h6>
-                                    <div class="card-value text-danger float-left mr-3 pr-2 border-right ">200</div>
-                                    <div class="font-12 ">Delux Room <span class="float-right ">55</span></div>
-                                    <div class="font-12 ">General Rooms <span class="float-right ">105</span></div>
-                                    <div class="font-12 ">VIP Room <span class="float-right ">40</span></div>
-                                </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div class="card">
+                            <div class="body">
+                                <h6><i class="fa fa-building-o"></i> Total Rooms</h6>
+                                <div class="card-value text-danger float-left mr-3 pr-2 border-right">200</div>
+                                <div class="font-12">Deluxe <span class="float-right">55</span></div>
+                                <div class="font-12">General <span class="float-right">105</span></div>
+                                <div class="font-12">VIP <span class="float-right">40</span></div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 ">
-                            <div class="card ">
-                                <div class="body ">
-                                    <h6><i class="fa fa-users "></i> Total Guests</h6>
-                                    <div class="card-value text-info float-left mr-3 pr-2 border-right ">150</div>
-                                    <div class="font-12 ">Bed Only <span class="float-right ">35</span></div>
-                                    <div class="font-12 ">Bed & B/fast <span class="float-right ">105</span></div>
-                                    <div class="font-12 ">Bed, B/fast, Dinner <span class="float-right ">10</span></div>
-                                </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div class="card">
+                            <div class="body">
+                                <h6><i class="fa fa-users"></i> Total Guests</h6>
+                                <div class="card-value text-info float-left mr-3 pr-2 border-right">150</div>
+                                <div class="font-12">Bed Only <span class="float-right">35</span></div>
+                                <div class="font-12">B & B <span class="float-right">105</span></div>
+                                <div class="font-12">B & B, Dinner <span class="float-right">10</span></div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 ">
-                            <div class="card ">
-                                <div class="body ">
-                                    <h6><i class="fa fa-hospital-o "></i> Free Rooms</h6>
-                                    <div class="card-value text-green float-left mr-3 pr-2 border-right ">175</div>
-                                    <div class="font-12 ">Delux Room <span class="float-right ">55</span></div>
-                                    <div class="font-12 ">General Rooms <span class="float-right ">105</span></div>
-                                    <div class="font-12 ">VIP Room <span class="float-right ">40</span></div>
-                                </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div class="card">
+                            <div class="body">
+                                <h6><i class="fa fa-building-o"></i> Available Rooms</h6>
+                                <div class="card-value text-green float-left mr-3 pr-2 border-right">175</div>
+                                <div class="font-12">Deluxe <span class="float-right">55</span></div>
+                                <div class="font-12">General <span class="float-right">105</span></div>
+                                <div class="font-12">VIP <span class="float-right">40</span></div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 ">
-                            <div class="card ">
-                                <div class="body ">
-                                    <h6><i class="fa fa-hospital-o "></i> Total Rooms</h6>
-                                    <div class="card-value text-orange float-left mr-3 pr-2 border-right ">135</div>
-                                    <div class="font-12 ">Delux Room <span class="float-right ">55</span></div>
-                                    <div class="font-12 ">General Rooms <span class="float-right ">105</span></div>
-                                    <div class="font-12 ">VIP Room <span class="float-right ">40</span></div>
-                                </div>
-
-                                <!--Booking form here-->
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div class="card">
+                            <div class="body">
+                                <h6><i class="fa fa-building-o"></i> Opening Soon</h6>
+                                <div class="card-value text-orange float-left mr-3 pr-2 border-right">135</div>
+                                <div class="font-12">Deluxe <span class="float-right">55</span></div>
+                                <div class="font-12">General <span class="float-right">105</span></div>
+                                <div class="font-12">VIP <span class="float-right">40</span></div>
                             </div>
                         </div>
-                        <div id="body">
+                        <!--Booking form here-->
+                    </div>
+                    <div class="col-xl-12">
+                        <div id="card">
                             <div class="container-fluid">
-                                <div class="header">
-                                    <div class="row clearfix">
-                                        <div class="col-xl-12">
-                                            <h1>Booking Details</h1>
-                                            <nav aria-label="title">
-                                            </nav>
-                                        </div>
-                                    </div>
-                                    <div class="body">
+                                <div class="body">
+                                    <p>
                                         <div class="row clearfix">
-                                            <div class="col-md-3">
-                                                <b>Check In</b>
-                                                <div class="input-group mb-3">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text"><i class="icon-calendar"></i></span>
-                                                    </div>
-                                                    <input type="text" class="form-control date" placeholder="Ex: 30/07/2019">
+                                            <div class="col-xl-12">
+                                                <div class="text-red ">
+                                                    <h6>Booking Details</h6>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <b>Check Out</b>
-                                                <div class="input-group mb-3">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text"><i class="icon-calendar"></i></span>
-                                                    </div>
-                                                    <input type="text" class="form-control date" placeholder="Ex: 30/07/2019">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <b>First Name</b>
-                                                <div class="input-group mb-3">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text"><i class="fa fa-envelope-o"></i></span>
-                                                    </div>
-                                                    <input type="text" class="form-control name" placeholder="Ex: Tendai ">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <b>Surname</b>
-                                                <div class="input-group mb-3">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text"><i class="fa fa-envelope-o"></i></span>
-                                                    </div>
-                                                    <input type="text" class="form-control email" placeholder="Ex: Kwaramba">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-md-8">
-                                                <b>Mobile Phone Number</b>
-                                                <div class="input-group mb-3">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text"><i class="fa fa-mobile-phone"></i></span>
-                                                    </div>
-                                                    <input type="text" class="form-control mobile-phone-number" placeholder="Ex: +267 000 000">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-md-8">
-                                                <b>Phone Number</b>
-                                                <div class="input-group mb-3">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text"><i class="fa fa-phone"></i></span>
-                                                    </div>
-                                                    <input type="text" class="form-control phone-number" placeholder="Ex: +267 000 000">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <b>Email Address</b>
-                                                <div class="input-group mb-3">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text"><i class="fa fa-envelope-o"></i></span>
-                                                    </div>
-                                                    <input type="text" class="form-control email" placeholder="Ex: example@example.com">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <b>Postal Address</b>
-                                                <div class="input-group mb-3">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text"><i class="fa fa-envelope-o"></i></span>
-                                                    </div>
-                                                    <input type="text" class="form-control email" placeholder="Ex: example@example.com">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <b>Street Address</b>
-                                                <div class="input-group mb-3">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text"><i class="fa fa-envelope-o"></i></span>
-                                                    </div>
-                                                    <input type="text" class="form-control email" placeholder="Ex: example@example.com">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <b>City</b>
-                                                <div class="input-group mb-3">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text"><i class="fa fa-envelope-o"></i></span>
-                                                    </div>
-                                                    <input type="text" class="form-control email" placeholder="Ex: example@example.com">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <b>Country</b>
-                                                <div class="input-group mb-3">
-                                                </div>
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text"><i class="fa fa-envelope-o"></i></span>
-                                                </div>
-                                                <input type="text" class="form-control email" placeholder="Ex: example@example.com">
                                             </div>
                                         </div>
-                                    </div>
+                                        <div class="card ">
+                                            <div class="row clearfix ">
+                                                <div class="col-md-3 ">
+                                                    <div class="text-green ">
+                                                        <b>Check In</b>
+                                                        <div class="input-group mb-3 ">
+                                                            <div class="input-group-prepend ">
+                                                                <span class="input-group-text "><i class="icon-calendar "></i></span>
+                                                            </div>
+                                                            <input type="text " class="form-control date " placeholder="Ex: 30/07/2019 ">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 ">
+                                                    <div class="text-green ">
+                                                        <b>Check Out</b>
+                                                        <div class="input-group mb-3 ">
+                                                            <div class="input-group-prepend ">
+                                                                <span class="input-group-text "><i class="icon-calendar "></i></span>
+                                                            </div>
+                                                            <input type="text " class="form-control date " placeholder="Ex: 30/07/2019 ">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 ">
+                                                </div>
+                                                <div class="col-sm-6 ">
+                                                    <div class="text-green ">
+                                                        <b>First Name</b>
+                                                        <div class="input-group mb-3 ">
+                                                            <div class="input-group-prepend ">
+                                                                <span class="input-group-text "><i class="fa fa-envelope-o "></i></span>
+                                                            </div>
+                                                            <input type="text " class="form-control name " placeholder="Ex: Tendai ">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 ">
+                                                    <div class="text-green ">
+                                                        <b>Surname</b>
+                                                        <div class="input-group mb-3 ">
+                                                            <div class="input-group-prepend ">
+                                                                <span class="input-group-text "><i class="fa fa-envelope-o "></i></span>
+                                                            </div>
+                                                            <input type="text " class="form-control email " placeholder="Ex: Kwaramba ">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3 ">
+                                                    <div class="text-green ">
+                                                        <b>Mobile Phone Number</b>
+                                                        <div class="input-group mb-3 ">
+                                                            <div class="input-group-prepend ">
+                                                                <span class="input-group-text "><i class="fa fa-mobile-phone "></i></span>
+                                                            </div>
+                                                            <input type="text " class="form-control mobile-phone-number " placeholder="Ex: +267 000 000 ">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3 ">
+                                                    <div class="text-green ">
+                                                        <b>Phone Number</b>
+                                                        <div class="input-group mb-3 ">
+                                                            <div class="input-group-prepend ">
+                                                                <span class="input-group-text "><i class="fa fa-phone "></i></span>
+                                                            </div>
+                                                            <input type="text " class="form-control phone-number " placeholder="Ex: +267 000 000 ">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3 ">
+                                                    <div class="text-green ">
+                                                        <b>Email Address</b>
+                                                        <div class="input-group mb-3 ">
+                                                            <div class="input-group-prepend ">
+                                                                <span class="input-group-text "><i class="fa fa-envelope-o "></i></span>
+                                                            </div>
+                                                            <input type="text " class="form-control email " placeholder="Ex: example@example.com ">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 ">
+                                                    <div class="text-green ">
+                                                        <b>Postal Address</b>
+                                                        <div class="input-group mb-3 ">
+                                                            <div class="input-group-prepend ">
+                                                                <span class="input-group-text "><i class="fa fa-envelope-o "></i></span>
+                                                            </div>
+                                                            <input type="text " class="form-control email " placeholder="Ex: example@example.com ">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 ">
+                                                    <div class="text-green ">
+                                                        <b>Street Address</b>
+                                                        <div class="input-group mb-3 ">
+                                                            <div class="input-group-prepend ">
+                                                                <span class="input-group-text "><i class="fa fa-envelope-o "></i></span>
+                                                            </div>
+                                                            <input type="text " class="form-control email " placeholder="Ex: example@example.com ">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 ">
+                                                    <div class="text-green ">
+                                                        <b>City</b>
+                                                        <div class="input-group mb-3 ">
+                                                            <div class="input-group-prepend ">
+                                                                <span class="input-group-text "><i class="fa fa-envelope-o "></i></span>
+                                                            </div>
+                                                            <input type="text " class="form-control email " placeholder="Ex: Gaborone ">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 ">
+                                                    <div class="text-green ">
+                                                        <b>Country</b>
+                                                        <div class="input-group mb-3 ">
+                                                            <div class="input-group-prepend ">
+                                                                <span class="input-group-text "><i class="fa fa-envelope-o "></i></span>
+                                                            </div>
+                                                            <input type="text " class="form-control email " placeholder="Ex: Botswana ">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 ">
+                                                    <div class="card">
+                                                        <a class="btn btn-primary btn-round" data-toggle="collapse" href="pages-room-add.html" role="button" aria-expanded="false" aria-controls="nav-link">
+                                                            Next</button></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
 
-                            <!-- Javascript -->
-                            <script src="assets/bundles/libscripts.bundle.js "></script>
-                            <script src="assets/bundles/vendorscripts.bundle.js "></script>
+                <!-- Javascript -->
+                <script src="assets/bundles/libscripts.bundle.js "></script>
+                <script src="assets/bundles/vendorscripts.bundle.js "></script>
 
-                            <script src="assets/bundles/c3.bundle.js "></script>
-                            <script src="../assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js "></script>
+                <script src="assets/bundles/c3.bundle.js "></script>
+                <script src="../assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js "></script>
 
-                            <script src="assets/bundles/mainscripts.bundle.js "></script>
-                            <script src="assets/js/index8.js "></script>
+                <script src="assets/bundles/mainscripts.bundle.js "></script>
+                <script src="assets/js/index8.js "></script>
 </body>
 
 </html>
