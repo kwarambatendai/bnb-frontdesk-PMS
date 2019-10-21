@@ -21,14 +21,14 @@
     <link rel="stylesheet" href="assets/css/site.min.css">
 
     <!--Invoice scripts-->
-    <!--<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>-->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 
 <body class="theme-cyan font-montserrat light_version">
 
-    <!--Page Loader 
+    <!--Page Loader -->
     <div class="page-loader-wrapper">
         <div class="loader">
             <div class="bar1"></div>
@@ -38,7 +38,7 @@
             <div class="bar5"></div>
         </div>
     </div>
-    </div>-->
+    </div>
 
 
     <!-- Overlay For Sidebars -->
@@ -681,7 +681,7 @@
 
         <div class="row">
             ​
-            <div class="col-md-2">
+            <div class="col-lg-2">
                 <div class="card">
                     <div class="img-fluid ">
                         <picture>
@@ -691,121 +691,122 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-lg-5">
                 <div class="card">
                     <div class="card-body ">
                         <h5 class="card-title">Company Details</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text">Name:</p>
+                        <p class="card-text">Address:</p>
+                        <p class="card-text">VAT. No.:</p>
+                        <p class="card-text">Employee:</p>
+                        <p class="card-text">Other Detail:</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-lg-5">
                 <div class="card">
                     <div class="card-body ">
                         <h5 class="card-title">Customer Details</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text">Name:</p>
+                        <p class="card-text">Address:</p>
+                        <p class="card-text">Room:</p>
+                        <p class="card-text">Check In:</p>
+                        <p class="card-text">Check Out:</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row clearfix">
-                <div class="col-lg-12">
-                    <table class="table table-bordered table-hover" id="tab_logic">
-                        <thead>
-                            <tr>
-                                <th class="text push-left text-green"> <b>Date</b> </th>
-                                <th class="text push-left text-green"> <b>Description</b> </th>
-                                <th class="text push-left text-green"> <b>Rate</b> </th>
-                                <th class="text push-left text-green"> <b>Discount</b> </th>
-                                <th class="text push-left text-green"> <b>Total</b> </th>
-                                <th class="text push-left"></th>
-                </div>
-                </tr>
-                </thead>
-                <tbody>
-                    <tr id='addr0'>
-                        <td><input type="text" name='Date[]' placeholder="30/09/2019" class="form-control" class id="date" /></td>
-                        <td><input type="text" name='Description[]' placeholder='Enter Description' class="form-control" /></td>
-                        <td><input type="text" name='Rate[]' placeholder='Enter Rate' class="form-control qty" step="0" min="0" /></td>
-                        <td><input type="text" name='Discount[]' placeholder='Enter Discount' class="form-control price" step="0.00" min="0" /></td>
-                        <td><input type="text" name='Total[]' placeholder='0.00' class="form-control total" readonly /></td>
-                        <td>
-                            <div class="row clearfix">
-                                <div class="col-sm-3">
-                                    <button id="add_row" class="btn btn-primary"><i class="fa fa-plus"></i></button>
-                                    <button id='delete_row' class="btn btn-primary"><i class="fa fa-trash"></i></button>
-                                </div>
-                        </td>
-                    </tr>
-                    <tr id='addr1'></tr>
-                    <td><input type="text" name='Date[]' placeholder="30/09/2019" class="form-control" class id="date" /></td>
-                    <td><input type="text" name='Description[]' placeholder='Enter Description' class="form-control" /></td>
-                    <td><input type="text" name='Rate[]' placeholder='Enter Rate' class="form-control qty" step="0" min="0" /></td>
-                    <td><input type="text" name='Discount[]' placeholder='Enter Discount' class="form-control price" step="0.00" min="0" /></td>
-                    <td><input type="text" name='Total[]' placeholder='0.00' class="form-control total" readonly /></td>
-                    <td>
-                        <div class="row clearfix">
-                            <div class="col-sm-3">
-                                <button id="add_row" class="btn btn-primary"><i class="fa fa-plus"></i></button>
-                                <button id='delete_row' class="btn btn-primary"><i class="fa fa-trash"></i></button>
-                            </div>
-                    </td>
-                    </tr>
-                    <tr id='addr2'></tr>
-                    <td><input type="text" name='Date[]' placeholder="30/09/2019" class="form-control" class id="date" /></td>
-                    <td><input type="text" name='Description[]' placeholder='Enter Description' class="form-control" /></td>
-                    <td><input type="text" name='Rate[]' placeholder='Enter Rate' class="form-control qty" step="0" min="0" /></td>
-                    <td><input type="text" name='Discount[]' placeholder='Enter Discount' class="form-control price" step="0.00" min="0" /></td>
-                    <td><input type="text" name='Total[]' placeholder='0.00' class="form-control total" readonly /></td>
-                    <td>
-                        <div class="row clearfix">
-                            <div class="col-sm-3">
-                                <button id="add_row" class="btn btn-primary"><i class="fa fa-plus"></i></button>
-                                <button id='delete_row' class="btn btn-primary"><i class="fa fa-trash"></i></button>
-                            </div>
-                    </td>
-                    </tr>
-                    <tr id='addr3'></tr>
-                    <td><input type="text" name='Date[]' placeholder="30/09/2019" class="form-control" class id="date" /></td>
-                    <td><input type="text" name='Description[]' placeholder='Enter Description' class="form-control" /></td>
-                    <td><input type="text" name='Rate[]' placeholder='Enter Rate' class="form-control qty" step="0" min="0" /></td>
-                    <td><input type="text" name='Discount[]' placeholder='Enter Discount' class="form-control price" step="0.00" min="0" /></td>
-                    <td><input type="text" name='Total[]' placeholder='0.00' class="form-control total" readonly /></td>
-                    <td>
-                        <div class="row clearfix">
-                            <div class="col-sm-3">
-                                <button id="add_row" class="btn btn-primary"><i class="fa fa-plus"></i></button>
-                                <button id='delete_row' class="btn btn-primary"><i class="fa fa-trash"></i></button>
-                                <tr></tr>
-                                <div class="row clearfix">
-                                    <div class="col-md-3">
-                                        <!--<table class="table table-bordered table-hover" id="tab_logic_total">
-                                                    <tbody>-->
-
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <div class="row clearfix"></div>
-                                        <th class="text">Sub Total</th>
-                                        <td class="text"><input type="text" name='sub_total' placeholder='0.00' class="form-control" id="sub_total" readonly /></td>
-                                        <td></td>
+        <table>
+            <table action id="invoice">
+                <div class="container">
+                    <div class="row clearfix">
+                        <div class="col-lg-12">
+                            <table class="table table-bordered table-hover" id="tab_logic">
+                                <thead>
+                                    <tr>
+                                        <th class="text push-left text-green"> <b>Date</b> </th>
+                                        <th class="text push-left text-green"> <b>Description</b> </th>
+                                        <th class="text push-left text-green"> <b>Qty</b> </th>
+                                        <th class="text push-left text-green"> <b>Rate</b> </th>
+                                        <th class="text push-left text-green"> <b>Total</b> </th>
+                                        <th class="text push-left"></th>
+                        </div>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr id='addr0'>
+                                <td><input type="text" name='Date[]' placeholder="30/09/2019" class="form-control" class id="date" /></td>
+                                <td><input type="text" name='Description[]' placeholder='Enter Description' class="form-control" /></td>
+                                <td><input type="text" name='Qty[]' placeholder='Enter Quantity' class="form-control qty" step="0" min="0" /></td>
+                                <td><input type="text" name='Rate[]' placeholder='Enter Rate' class="form-control rate" step="0.00" min="0" /></td>
+                                <td><input type="text" name='Total[]' placeholder='0.00' class="form-control total" /></td>
+                                <td>
+                                    <div class="row clearfix">
+                                        <div class="col-sm-3">
+                                            <button id="add_row" class="btn btn-primary"><i class="fa fa-plus"></i></button>
+                                            <button id='delete_row' class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                                        </div>
                                         <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <th class="text">Tourism Levy</th>
-                                            <td class="text">
-                                                <div class="input-group mb-2 mb-sm-0">
-                                                    <input type="text" class="form-control" id="tax" placeholder="0">
-                                                    <div class="input-group-addon"></div>
-                                                </div>
+                                </td>
+                                </tr>
+                                <tr id='addr1'></tr>
+                                <td><input type="text" name='Date[]' placeholder="30/09/2019" class="form-control" class id="date" /></td>
+                                <td><input type="text" name='Description[]' placeholder='Enter Description' class="form-control" /></td>
+                                <td><input type="text" name='Qty[]' placeholder='Enter Quantity' class="form-control qty" step="0" min="0" /></td>
+                                <td><input type="text" name='Rate[]' placeholder='Enter Rate' class="form-control rate" step="0.00" min="0" /></td>
+                                <td><input type="text" name='Total[]' placeholder='0.00' class="form-control total" /></td>
+                                <td>
+                                    <div class="row clearfix">
+                                        <div class="col-sm-3">
+                                            <button id="add_row" class="btn btn-primary"><i class="fa fa-plus"></i></button>
+                                            <button id='delete_row' class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                                        </div>
+                                </td>
+                            </tr>
+                            <tr id='addr2'></tr>
+                            <td><input type="text" name='Date[]' placeholder="30/09/2019" class="form-control" class id="date" /></td>
+                            <td><input type="text" name='Description[]' placeholder='Enter Description' class="form-control" /></td>
+                            <td><input type="text" name='Qty[]' placeholder='Enter Quantity' class="form-control qty" step="0" min="0" /></td>
+                            <td><input type="text" name='Rate[]' placeholder='Enter Rate' class="form-control rate" step="0.00" min="0" /></td>
+                            <td><input type="text" name='Total[]' placeholder='0.00' class="form-control total" /></td>
+                            <td>
+                                <div class="row clearfix">
+                                    <div class="col-sm-3">
+                                        <button id="add_row" class="btn btn-primary"><i class="fa fa-plus"></i></button>
+                                        <button id='delete_row' class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                                    </div>
+                            </td>
+                            </tr>
+                            <tr id='addr3'></tr>
+                            <td><input type="text" name='Date[]' placeholder="30/09/2019" class="form-control" class id="date" /></td>
+                            <td><input type="text" name='Description[]' placeholder='Enter Description' class="form-control" /></td>
+                            <td><input type="text" name='Qty[]' placeholder='Enter Quantity' class="form-control qty" step="0" min="0" /></td>
+                            <td><input type="text" name='Rate[]' placeholder='Enter Rate' class="form-control rate" step="0.00" min="0" /></td>
+                            <td><input type="javascript:," name='Total[]' placeholder='0.00' class="form-control total">
+
+                            </td>
+                            <td>
+                                <div class="row clearfix">
+                                    <div class="col-sm-3">
+                                        <button id="add_row" class="btn btn-primary"><i class="fa fa-plus"></i></button>
+                                        <button id='delete_row' class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                                        <tr></tr>
+                                        <div class="row clearfix">
+                                            <div class="col-md-3">
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <div class="row clearfix"></div>
+                                                <th class="text">Sub Total</th>
+
+                                                <td class="text"><input type="text" name='sub_total' placeholder='0.00' class="form-control" id="sub_total" /></td>
                                                 <td></td>
                                                 <tr>
                                                     <td></td>
                                                     <td></td>
                                                     <td></td>
-                                                    <th class="text">Tax (12%)</th>
+                                                    <div class="row clearfix"></div>
+                                                    <th class="text">Tourism Levy</th>
                                                     <td class="text">
                                                         <div class="input-group mb-2 mb-sm-0">
                                                             <input type="text" class="form-control" id="tax" placeholder="0">
@@ -816,38 +817,57 @@
                                                             <td></td>
                                                             <td></td>
                                                             <td></td>
-                                                            <th class="text">Tax Amount</th>
-                                                            <td class="text"><input type="text" name='tax_amount' id="tax_amount" placeholder='0.00' class="form-control" readonly /></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <th class="text">Grand Total</th>
-                                                            <td class="text"><input type="text" name='total_amount' id="total_amount" placeholder='0.00' class="form-control" readonly /></td>
-                                                            <td></td>
-                                                        </tr>
-                </tbody>
-                </table>
-                </div>
-                </div>
-                </div>
-                </div>
-                </div>
-                </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <!--Javascript-->
-    <script src="../html/assets/bundles/libscripts.bundle.js "></script>
-    <script src="../html/assets/bundles/vendorscripts.bundle.js "></script>
+                                                            <div class="row clearfix"></div>
+                                                            <th class="text">Tax (12%)</th>
+                                                            <td class="text">
+                                                                <div class="input-group mb-2 mb-sm-0">
+                                                                    <input type="text" class="form-control" id="tax" placeholder="0">
+                                                                    <div class="input-group-addon"></div>
+                                                                </div>
+                                                                <td></td>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <th class="text">Grand Total</th>
+                                                                    <td class="text"><input type="text" name='total_amount' id="total_amount" placeholder='0.00' class="form-control" /></td>
+                                                                    <td></td>
+                                                                </tr>
+                        </tbody>
+                        </table>
+                        <!--Invoice Footer-->
+                        <footer>
+                            <footer class="page-footer font-small black pt-4">
+                                <div class="container-fluid text-center text-md-left">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h6 class="text">Thanks</h6>
+                                            <p>Thank you for staying and the <b>Indaba Lodge</b>, your patronage is greatly appreciated and we hope to accomodate you again soon.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <h6 class="text">Terms and Conditions</h6>
+                                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt
+                                        in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                                    </p>
+                                </div>
+                                <hr class="clearfix">
+                                <div class="col-md-12">
+                                    <div class="footer-copyright text-center py-3">© 2019 Copyright
+                                        <a href="https://phemo.com"> Phemo B&B Frontdesk PMS</a>
+                                    </div>
+                            </footer>
+                            </div>
+                            </div>
+                            </div>
+                            <!--Javascript-->
+                            <script src="../html/assets/bundles/libscripts.bundle.js "></script>
+                            <script src="../html/assets/bundles/vendorscripts.bundle.js "></script>
 
-    <script src="../assets/vendor/editable-table/mindmup-editabletable.js"></script>
-    <script src="../html/assets/bundles/mainscripts.bundle.js "></script>
-    <script src="..html/assets/js/invoice.js"></script>
+                            <script src="../assets/vendor/editable-table/mindmup-editabletable.js"></script>
+                            <script src="../html/assets/bundles/mainscripts.bundle.js "></script>
+                            <script src="..html/assets/js/invoice.js"></script>
 </body>
 
 </html>

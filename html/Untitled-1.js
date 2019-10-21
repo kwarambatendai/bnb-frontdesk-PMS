@@ -3,19 +3,20 @@ $(document).ready(function() {
 
     $("#addrow").on("click", function() {
         var newRow = $("<tr>");
+        var cols = "5";
+        var newRow = $("<tr>");
         var cols = "";
-
-        cols += '<td><input type="text" class="form-control" name="item' + counter + '"/></td>';
+        cols += '<td><input type="text" class="form-control" name="date' + counter + '"/></td>';
+        cols += '<td><input type="text" class="form-control" name="description' + counter + '"/></td>';
         cols += '<td><input type="text" class="form-control" name="rate' + counter + '"/></td>';
-        cols += '<td><input type="text" class="form-control" name="days' + counter + '"/></td>';
+        cols += '<td><input type="text" class="form-control" name="qty' + counter + '"/></td>';
         cols += '<td><input type="text" class="form-control" name="total' + counter + '"/></td>';
 
-        cols += '<td><input type="button" class="ibtnDel btn btn-md btn-danger "  value="Delete"></td>';
+        cols += '<td><input type="button" class="ibtnDel btn btn-primary "  value="Delete"></td>';
         newRow.append(cols);
         $("table.order-list").append(newRow);
         counter++;
     });
-
 
 
     $("table.order-list").on("click", ".ibtnDel", function(event) {
@@ -39,3 +40,4 @@ function calculateGrandTotal() {
         grandTotal += +$(this).val();
     });
     $("#grandtotal").text(grandTotal.toFixed(2));
+}
